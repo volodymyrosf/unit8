@@ -1,0 +1,61 @@
+@import "vars";
+@import "libs";
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+body {
+	position: relative;
+	min-width: 320px;
+	overflow-x: hidden;
+	font-size: 16px;
+	line-height: 1.65;
+	font-family: $default-font;
+	color: $text;
+	background-color: $page-color;
+	}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+
+	&.img-width {
+		width: 100%;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+.search-wrapper {
+	display: flex;
+	justify-content: center;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.search {
+	padding: 5px;
+}
+
+.fancybox-inner {
+	min-width: 400px !important;  /* override default styles set by JS */
+	min-height: 370px !important; /* override default styles set by JS */
+}
+
+ 
+ @import '_blocks/user';
+
